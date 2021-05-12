@@ -21,6 +21,7 @@
 <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://driverdotcentric.com/download?p=3b8adecf-cce5-4002-8987-fd8136220228%26h=" id="qr-code"/>
 
 <div class="noprint">
+	<p id="qr_uuid"></p>
 <button onclick="printF()">Print me</button>
 </div>
 
@@ -40,6 +41,7 @@
     document.getElementById("zip").innerHTML =  'Postal Code: ' + url.searchParams.get("zip");
     document.getElementById("city").innerHTML =  'City: ' + url.searchParams.get("city");
     document.getElementById("country").innerHTML =  'Country Name: ' + url.searchParams.get("country");
+	document.getElementById("qr_uuid").innerHTML =  'QR UUID: ' + url.searchParams.get("qr_uuid");
 	document.getElementById("qr-code").src = 'https://api.qrserver.com/v1/create-qr-code/?data=https://driverdotcentric.com/download?p=3b8adecf-cce5-4002-8987-fd8136220228%26h=' + url.searchParams.get("qr_uuid");
   }
   processParams();
