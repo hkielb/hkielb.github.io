@@ -17,12 +17,12 @@
 <p id="zip"></p>
 <p id="city"></p>
 <p id="country"></p>
-<p id="qr_uuid"></p>
 
 
 <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://driverdotcentric.com/download?p=3b8adecf-cce5-4002-8987-fd8136220228%26h=" id="qr-code"/>
 
 <div class="noprint">
+	<p id="qr_uuid"></p>
 <button onclick="printF()">Print me</button>
 </div>
 
