@@ -221,6 +221,7 @@
     document.getElementById("country").innerHTML =  'Country Name: ' + country;
 	var qr_uuid = url.searchParams.get("qr_uuid") ?? '';
 	document.getElementById("qr-code").src = 'https://api.qrserver.com/v1/create-qr-code/?data=https://driverdotcentric.com/download?p=3b8adecf-cce5-4002-8987-fd8136220228%26h=' + qr_uuid;
+	document.getElementById("qr-code").style = qr_uuid==''?"display:none;":"";
   }
   processParams();
   function printF(){
